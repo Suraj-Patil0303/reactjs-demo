@@ -11,10 +11,10 @@ const enternewpassword = (props) =>{
                 <Card className="text-center" style={{ width: '20rem' }}>
                     <Form>
                         <h2>Enter new Password</h2>
-                        <Form.Group className="mt-3" controlId="formBasicPassword">
+                        <Form.Group className="mt-3" controlId="enterNewPassword">
                             <Form.Control type="password" placeholder="New Password" />
                         </Form.Group>
-                        <Form.Group className="mt-3" controlId="formBasicPassword">
+                        <Form.Group className="mt-3" controlId="confirmNewPassword">
                             <Form.Control type="password" placeholder="Confirm-password" />
                         </Form.Group>
 

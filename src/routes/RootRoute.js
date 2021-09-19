@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch ,Route } from "react-router-dom";
-import login from "../pages/login"
+import MyLogin from "../pages/MyLogin"
 import signup from "../pages/signup"
 import forgotpassword from "../pages/forgotpassword"
 import profile from "../pages/profile"
@@ -9,7 +9,7 @@ const RootRoute = () => {
     return(
         <Router>
             <Switch>
-            <Route exact path="/" component = {login}></Route>
+            <Route exact path="/" component = {MyLogin}></Route>
             <Route exact path="/signup" component ={signup}></Route>
             <Route exact path="/forgotpassword" component = {forgotpassword}></Route>
             <Route exact path="/enternewpassword" component = {enternewpassword}></Route>

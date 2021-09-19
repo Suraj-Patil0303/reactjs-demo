@@ -13,7 +13,7 @@ const forgotpassword = (props) =>{
                 <Card className="text-center" style={{ width: '20rem' }}>
                     <Form>
                         <h2 className="mt-3">Forgotpassword</h2>
-                        <Form.Group className="mt-3" controlId="formBasicEmail">
+                        <Form.Group className="mt-3" controlId="forgotpasswordEmail">
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
                     

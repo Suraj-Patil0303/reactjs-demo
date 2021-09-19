@@ -12,13 +12,13 @@ const signup = (props) =>{
                     <Form>
 
                         <h2 className = "App-b">Signup</h2> 
-                        <Form.Group className="mt-3" controlId="formBasicEmail">
+                        <Form.Group className="mt-3" controlId="signUpUserName">
                             <Form.Control type="user" placeholder="User Name" />
                         </Form.Group>
-                        <Form.Group className="mt-3" controlId="formBasicEmail">
+                        <Form.Group className="mt-3" controlId="signUpEmail">
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
-                        <Form.Group className="mt-3" controlId="formBasicPassword">
+                        <Form.Group className="mt-3" controlId="SignUpPassword">
                             <Form.Control type="password" placeholder="Enter Password" />
                         </Form.Group>
                         
