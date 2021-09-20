@@ -14,7 +14,7 @@ const MyLogin = (props) =>{
    return(
       <>
          <Form className="bg"/>
-         <Form className ="login-Effect wow " >
+         <Form className ="login-Effect" >
 
                <h3 className="mt-3">Login</h3>
                <Form.Group className="shadow-sm mt-4 bg-white rounded" controlId="loginEmail">
@@ -34,7 +34,7 @@ const MyLogin = (props) =>{
                  <Nav.Link  href="/ForgotPassword">Forgot password?</Nav.Link>
                </Nav>
                
-               <Button type="button" onClick={() =>{
+               <Button className ='login-primary' type="button" onClick={() =>{
                   if('admin' === data.emailId && 'admin' === data.password)
                   {
                      props.history.push('/Profile',{
