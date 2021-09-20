@@ -8,17 +8,19 @@
   left: 50%;
   transform: translate(-50%, -50%); 
   width: 300px;
-  height: 320px;
+  height: auto;
   padding: 20px;
-  text-align: center;
-}
-.login-primary{
-  color: #fff;
-  background-color: #516a90;
-  border-color: #516a90;
+  /* font-style: italic;
+  font-family: cursive;
+  font-size: xx-large; */
+  /* text-align: center; */
 }
 
-
+.mt-3 {
+  font-style: italic;
+  font-family: cursive;
+  font-size: xx-large;
+}
   .bg {
   background-image: url('/src/assets/img/b2.jpg');
   height: 100vh;
@@ -32,14 +34,17 @@
   }
 
   .nav-link {
-    display: block;
+    /* display: block; */
     padding: 0.5rem 1rem;
-    color: #0d41fd;
+    color: #516a90; 
     font-size: small;
     text-decoration: none;
     transition: color 0.15s ease-in-out, 
     background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+    font-style: italic;
+    font-family: cursive;
+
 }
  
 

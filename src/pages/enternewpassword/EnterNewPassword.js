@@ -11,7 +11,8 @@ const Enternewpassword = (props) =>{
          <Col className= 'mt-5 p-5'>
             <Form className ="enternewpassword-Effect" >
             
-                <h2>Enter new Password</h2>
+                <Form.Label className="mt-3" size="lg">Enter new Password</Form.Label>
+
                     <Form.Group className="mt-3" controlId="enterNewPassword">
                         <Form.Control type="password" placeholder="New Password" />
                     </Form.Group>

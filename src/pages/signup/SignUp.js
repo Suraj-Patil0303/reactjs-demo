@@ -8,29 +8,30 @@ const Signup = (props) =>{
 
     return(
         <>
-         <Form className="bg"/>
+            <Form className="bg"/>
             <Form className ="signup-Effect" >
 
-                        <h2 className = "App-b">Signup</h2> 
-                        <Form.Group className="mt-3" controlId="signUpUserName">
-                            <Form.Control type="user" placeholder="User Name" />
-                        </Form.Group>
-                        <Form.Group className="mt-3" controlId="signUpEmail">
-                            <Form.Control type="email" placeholder="Enter email" />
-                        </Form.Group>
-                        <Form.Group className="mt-3" controlId="SignUpPassword">
-                            <Form.Control type="password" placeholder="Enter Password" />
-                        </Form.Group>
+                <Form.Label className="mt-3" size="lg">SiginUp</Form.Label>
+
+                <Form.Group className="mt-3" controlId="signUpUserName">
+                    <Form.Control type="user" placeholder="User Name" />
+                </Form.Group>
+                <Form.Group className="mt-3" controlId="signUpEmail">
+                    <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+                <Form.Group className="mt-3" controlId="SignUpPassword">
+                    <Form.Control type="password" placeholder="Enter Password" />
+                </Form.Group>
+                    
+                <Nav className="justify-content-end">
+                    <Nav.Item>
+                        <Nav.Link href="/">Already have an account</Nav.Link>
+                    </Nav.Item> 
+                </Nav>
                         
-                        <Nav className="justify-content-end">
-                            <Nav.Item>
-                                <Nav.Link href="/">Already have an account</Nav.Link>
-                            </Nav.Item> 
-                        </Nav>
+                <Button className="mt-3 mb-3" type="button" onClick={handleClick}>Create Account</Button>
                         
-                        <Button className="mt-3 mb-3" type="button" onClick={handleClick}>Create Account</Button>
-                        
-                </Form>
+            </Form>
         </>
     );
 }

@@ -10,11 +10,11 @@ const Profile = (props) =>{
     return(
         <>
             <Container>
-                    <h2>Profile</h2>
-                    <FormLabel>
-                        {a}
-                        </FormLabel> 
-                    <Button className="mt-3 mt-3" type="button" onClick={handleClick}>Logout</Button>
+                <h2>Profile</h2>
+                <FormLabel>
+                    {a}
+                </FormLabel> 
+                <Button className="mt-3 mt-3" type="button" onClick={handleClick}>Logout</Button>
             </Container>
         </>
     )
