@@ -1,15 +1,15 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import {Row ,Nav ,Card, Container,Form} from 'react-bootstrap'
+import {Nav ,Form } from 'react-bootstrap';
+import './signup.css'
 
-const signup = (props) =>{
-    const handleClick = () => props.history.push('/profile');
+const Signup = (props) =>{
+    const handleClick = () => props.history.push('/Profile');
 
     return(
-        <Container className='mt-5'>
-            <Row className="justify-content-md-center">
-                <Card className="text-center" style={{ width: '20rem' }}>
-                    <Form>
+        <>
+         <Form className="bg"/>
+            <Form className ="signup-Effect" >
 
                         <h2 className = "App-b">Signup</h2> 
                         <Form.Group className="mt-3" controlId="signUpUserName">
@@ -30,10 +30,8 @@ const signup = (props) =>{
                         
                         <Button className="mt-3 mb-3" type="button" onClick={handleClick}>Create Account</Button>
                         
-                    </Form>
-                </Card>
-            </Row>
-        </Container>
+                </Form>
+        </>
     );
 }
-export default signup
+export default Signup

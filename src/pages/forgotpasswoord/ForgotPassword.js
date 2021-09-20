@@ -1,18 +1,18 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import {Row ,Nav ,Card, Container,Form} from 'react-bootstrap'
+import {Nav ,Form } from 'react-bootstrap'
+import './forgotpassword.css'
 
-
-const forgotpassword = (props) =>{
-    const handleClick = () => props.history.push('/enternewpassword');
+const Forgotpassword = (props) =>{
+    const handleClick = () => props.history.push('/EnterNewPassword');
 
     return(
-        <Container className='mt-5'>
-            <Row className="justify-content-md-center">
-                <Card className="text-center" style={{ width: '20rem' }}>
-                    <Form>
-                        <h2 className="mt-3">Forgotpassword</h2>
+        <>
+         <Form className="bg"/>
+           <Form className ="forgotpassword-Effect" >
+
+                     <h2 className="mt-3">Forgotpassword</h2>
                         <Form.Group className="mt-3" controlId="forgotpasswordEmail">
                             <Form.Control type="email" placeholder="Enter email" />
                         </Form.Group>
@@ -22,16 +22,14 @@ const forgotpassword = (props) =>{
                                 <Nav.Link href="/">Login</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/signup">Signup</Nav.Link>
+                                <Nav.Link href="/Signup">Signup</Nav.Link>
                             </Nav.Item>  
                         </Nav>
 
                         <Button className="mt-3 mb-3" type="button" onClick={handleClick}>Send Link</Button>
 
-                    </Form>
-                </Card>
-            </Row>
-        </Container>
+            </Form>
+        </>
     );
 }
-export default forgotpassword
+export default Forgotpassword
