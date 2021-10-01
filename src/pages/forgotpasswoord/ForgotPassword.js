@@ -10,12 +10,13 @@ const Forgotpassword = (props) =>{
     return(
         <>
          <Form className="bg"/>
-           <Form className ="forgotpassword-Effect" >
+           {/* <Form className ="forgotpassword-Effect" > */}
+            <div className ="forgotpassword-Effect">
 
             <Form.Label className="mt-3" size="lg">Forgot Password</Form.Label>
 
                 <Form.Group className="mt-3" controlId="forgotpasswordEmail">
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" placeholder="Enter Email" />
                 </Form.Group>
                     
                 <Nav className="justify-content-end">
@@ -29,7 +30,8 @@ const Forgotpassword = (props) =>{
 
                 <Button className="mt-3 mb-3" type="button" onClick={handleClick}>Send Link</Button>
 
-            </Form>
+            </div>
+            {/* </Form> */}
         </>
     );
 }

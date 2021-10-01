@@ -16,12 +16,13 @@
   /* text-align: center; */
 }
 
-.mt-3 {
+.mt-3{
   font-style: italic;
   font-family: cursive;
   font-size: xx-large;
 }
-  .bg {
+
+.bg {
   background-image: url('/src/assets/img/b2.jpg');
   height: 100vh;
   width: auto;
@@ -31,21 +32,17 @@
   filter: blur(1px);
   -webkit-filter: blur(1px);
   /* background-blend-mode: luminosity; */
-  }
-
-  .nav-link {
-    /* display: block; */
-    padding: 0.5rem 1rem;
-    color: #516a90; 
-    font-size: small;
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, 
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
-    font-style: italic;
-    font-family: cursive;
-
 }
- 
 
-  
+.nav-link {
+  /* display: block; */
+  padding: 0.5rem 1rem;
+  color: #516a90; 
+  font-size: small;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, 
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out;
+  font-style: italic;
+  font-family: cursive;
+} 

@@ -14,7 +14,7 @@ const RootRoute = () => {
             <Route exact path="/Signup" component ={SignUp}></Route>
             <Route exact path="/ForgotPassword" component = {ForgotPassword}></Route>
             <Route exact path="/EnterNewPassword" component = {EnterNewPassword}></Route>
-            <Route exact path="/Profile" component ={Profile}></Route>
+            <Route exact path="/Profile/:name" component ={Profile}></Route>
             </Switch>
         </Router>
     );

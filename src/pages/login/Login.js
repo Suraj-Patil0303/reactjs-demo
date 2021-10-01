@@ -6,7 +6,7 @@ import { useState } from "react";
 import Swal from 'sweetalert2'
 import './login.css';
 
-const MyLogin = (props) =>{
+const Login = (props) =>{
 
    const [data , setData] = useState({emailId : "", password : ''});
    //const Swal = require('sweetalert2');
@@ -17,7 +17,7 @@ const MyLogin = (props) =>{
          <Form className ="login-Effect" >
 
             <Form.Label className="mt-3" size="lg">Login</Form.Label>
-            <Form.Group className="shadow-sm mt-3 bg-white rounded" controlId="loginEmail">
+            <Form.Group className="mt-3" controlId="loginEmail">
                <Form.Control type="email" 
                   placeholder="Enter email"
                   value ={data.emailId} 
@@ -34,10 +34,10 @@ const MyLogin = (props) =>{
               <Nav.Link  href="/ForgotPassword">Forgot password?</Nav.Link>
             </Nav>
                
-            <Button className="mt-3" type="button" onClick={() =>{
-               if('admin' === data.emailId && 'admin' === data.password)
+            <Button className='btn' onClick={() =>{
+               if(('admin' === data.emailId && 'admin' === data.password) || data.emailId === data.password)
                {
-                  props.history.push('/Profile',{
+                  props.history.push(`/Profile/${data.emailId}`,{
                      emailID : data.emailId
                   });
                }else{
@@ -59,4 +59,4 @@ const MyLogin = (props) =>{
    );
 
 }
-export default MyLogin
+export default Login

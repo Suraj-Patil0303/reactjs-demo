@@ -1,15 +1,15 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import {Container ,Form ,Col } from 'react-bootstrap';
+import {Form } from 'react-bootstrap';
 import './enternewpassword.css'
 
 const Enternewpassword = (props) =>{
     const handleClick = () => props.history.push('/Profile');
 
     return(
-        <Container className='mt-5 p-5'>
-         <Col className= 'mt-5 p-5'>
-            <Form className ="enternewpassword-Effect" >
+        <>
+            <Form className="bg"/>
+                <Form className ="forgotpassword-Effect" >
             
                 <Form.Label className="mt-3" size="lg">Enter new Password</Form.Label>
 
@@ -22,8 +22,7 @@ const Enternewpassword = (props) =>{
 
                     <Button className="mt-3 mt-3" type="button" onClick={handleClick}>Submit</Button>
             </Form>
-        </Col>
-        </Container>
+        </>
     );
 }
 export default Enternewpassword
